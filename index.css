@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+h3{
+    text-align: center;
+    top: 50%;
+}
+span{
+    background:url("https://cdn2.iconfinder.com/data/icons/valentine-day-16/512/701_brokan_love_heart_wedding_valentine_valentines_day_love-512.png");
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear;
+}
+@keyframes animate {  
+    /* Use @keyframes when you need to animate changes to multiple CSS properties over time. */
+
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-2000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+    
+}
